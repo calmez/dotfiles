@@ -6,7 +6,7 @@ window-decoration = none
 mouse-hide-while-typing = true
 quit-after-last-window-closed = true
 
-initial-command = "/opt/homebrew/bin/tmux new-session -A -s playground"
+initial-command = "/usr/bin/tmux new-session -A -s playground"
 
 quick-terminal-position = bottom
 
