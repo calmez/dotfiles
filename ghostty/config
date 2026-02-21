@@ -6,7 +6,7 @@ window-decoration = none
 mouse-hide-while-typing = true
 quit-after-last-window-closed = true
 
-initial-command = "/usr/bin/tmux new-session -A -s playground"
+initial-command = "/usr/local/bin/tmux new-session -A -s workspace"
 
 quick-terminal-position = bottom
 
