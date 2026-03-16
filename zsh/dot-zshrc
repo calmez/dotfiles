@@ -130,3 +130,4 @@ export KUBECONFIG="${HOME}/.kube/config:${HOME}/.kube/local:${HOME}/.kube/config
 export PATH="$PATH:/Users/conrad/.lmstudio/bin"
 # End of LM Studio CLI section
 
+alias workspace="tmux new-session -A -s workspace"

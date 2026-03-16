@@ -1,6 +1,6 @@
 theme = Catppuccin Mocha
 font-family = BlexMono Nerd Font Mono
-font-size = 10
+font-size = 12
 
 window-decoration = none
 mouse-hide-while-typing = true
@@ -10,10 +10,10 @@ cursor-style = block
 cursor-style-blink = false
 shell-integration-features = no-cursor
 
-command = /bin/zsh
-initial-command = "/usr/local/bin/tmux new-session -A -s workspace"
+command = /bin/zsh -l -i
+initial-command = /bin/zsh -l -c 'tmux new-session -A -s workspace'
 
-shell-integration = zsh
+shell-integration = detect
 
 quick-terminal-position = bottom
 
