@@ -6,7 +6,14 @@ window-decoration = none
 mouse-hide-while-typing = true
 quit-after-last-window-closed = true
 
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+
+command = /bin/zsh
 initial-command = "/usr/local/bin/tmux new-session -A -s workspace"
+
+shell-integration = zsh
 
 quick-terminal-position = bottom
 
