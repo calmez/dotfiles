@@ -4,9 +4,6 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Set homebrew path
 export PATH=/opt/homebrew/bin:$PATH
 
-# python
-PATH=$(pyenv root)/shims:$PATH
-
 # go
 export PATH=$PATH:$HOME/go/bin
 
