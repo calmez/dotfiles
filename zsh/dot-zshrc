@@ -1,13 +1,11 @@
 # Add deno completions to search path
 if [[ ":$FPATH:" != *":/Users/conrad/.zsh/completions:"* ]]; then export FPATH="/Users/conrad/.zsh/completions:$FPATH"; fi
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Set homebrew path
 export PATH=/opt/homebrew/bin:$PATH
-
-# python
-PATH=$(pyenv root)/shims:$PATH
 
 # go
 export PATH=$PATH:$HOME/go/bin
@@ -121,13 +119,5 @@ compinit -u
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
-# kubeconfig
-export KUBECONFIG="${HOME}/.kube/config:${HOME}/.kube/local:${HOME}/.kube/config.t08:${HOME}/.kube/config.p08"
-. "/Users/conrad/.deno/env"
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/conrad/.lmstudio/bin"
-# End of LM Studio CLI section
 
 alias workspace="tmux new-session -A -s workspace"
