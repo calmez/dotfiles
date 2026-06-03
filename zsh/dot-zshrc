@@ -11,6 +11,9 @@ export PATH=/opt/homebrew/bin:$PATH
 # go
 export PATH=$PATH:$HOME/go/bin
 
+# deno
+export PATH=$PATH:$HOME/.deno/bin
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
