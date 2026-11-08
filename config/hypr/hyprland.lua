@@ -6,7 +6,7 @@
 -- Adjust names/positions with: hyprctl monitors
 hl.monitor({ output = "", mode = "preferred", position = "auto", scale = "auto" })
 hl.monitor({ output = "eDP-1", mode = "3200x1800@60", position = "auto", scale = 1.6 })
-hl.monitor({ output = "DP-2", mode = "5120x1440@60", position = "auto", scale = 1 })
+hl.monitor({ output = "DP-2", mode = "preferred", position = "auto", scale = "auto" })
 hl.monitor({ output = "DP-3", mode = "5120x1440@60", position = "auto", scale = 1 })
 hl.monitor({ output = "HDMI-A-1", mode = "1920x1080@60", position = "auto", scale = 1.33 })
 -- ---------------------------------------------------------------- env vars
@@ -142,6 +142,7 @@ hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl set 5%-"), { loc
 -- session
 hl.bind(mod .. " + SHIFT + M", hl.dsp.exit())
 hl.bind(mod .. " + SHIFT + R", hl.dsp.force_renderer_reload())
+hl.bind(mod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 
 -- move/resize with mouse
 hl.bind(mod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
