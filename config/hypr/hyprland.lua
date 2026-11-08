@@ -5,8 +5,7 @@
 -- ---------------------------------------------------------------- monitors
 -- Adjust names/positions with: hyprctl monitors
 local monitor_main = hl.monitor({ output = "DP-3", mode = "5120x1440@60", position = "0x0", scale = 1 })
-local monitor_side = hl.monitor({ output = "HDMI-A-1", mode = "1920x1080@60", position = "5120x360", scale = 1 })
-
+local monitor_side = hl.monitor({ output = "HDMI-A-1", mode = "1920x1080@60", position = "-1920x1080", scale = 1.3 })
 -- ---------------------------------------------------------------- env vars
 hl.env("XCURSOR_SIZE", "24")
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
@@ -15,6 +14,7 @@ hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
 hl.config({
 	input = {
 		kb_layout = "us", -- change to your layout (us, de, ...)
+		kb_options = "compose:ralt",
 		follow_mouse = 1,
 		sensitivity = 0,
 		touchpad = {
