@@ -8,6 +8,9 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Set homebrew path
 export PATH=/opt/homebrew/bin:$PATH
 
+## Linux Homebrew
+export PATH=:/home/linuxbrew/.linuxbrew/bin:$PATH
+
 # go
 export PATH=$PATH:$HOME/go/bin
 
