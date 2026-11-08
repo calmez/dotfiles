@@ -142,7 +142,7 @@ hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl set 5%-"), { loc
 -- session
 hl.bind(mod .. " + SHIFT + M", hl.dsp.exit())
 hl.bind(mod .. " + SHIFT + R", hl.dsp.force_renderer_reload())
-hl.bind(mod .. " + L", hl.dsp.exec_cmd("hyprlock"))
+hl.bind(mod .. " + ALT + L", hl.dsp.exec_cmd("hyprlock"))
 
 -- move/resize with mouse
 hl.bind(mod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
