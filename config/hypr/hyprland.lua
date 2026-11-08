@@ -4,8 +4,10 @@
 
 -- ---------------------------------------------------------------- monitors
 -- Adjust names/positions with: hyprctl monitors
-local monitor_main = hl.monitor({ output = "DP-3", mode = "5120x1440@60", position = "0x0", scale = 1 })
-local monitor_side = hl.monitor({ output = "HDMI-A-1", mode = "1920x1080@60", position = "-1920x1080", scale = 1.3 })
+hl.monitor({ output = "", mode = "preferred", position = "auto", scale = "auto" })
+hl.monitor({ output = "eDP-1", mode = "3200x1800@60", position = "auto", scale = "1.25" })
+hl.monitor({ output = "DP-3", mode = "5120x1440@60", position = "0x0", scale = 1 })
+hl.monitor({ output = "HDMI-A-1", mode = "1920x1080@60", position = "-1920x1080", scale = 1.3 })
 -- ---------------------------------------------------------------- env vars
 hl.env("XCURSOR_SIZE", "24")
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
