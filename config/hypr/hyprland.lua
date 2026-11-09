@@ -12,6 +12,7 @@ hl.monitor({ output = "HDMI-A-1", mode = "1920x1080@60", position = "auto", scal
 -- ---------------------------------------------------------------- env vars
 hl.env("XCURSOR_SIZE", "24")
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
+hl.env("SSH_AUTH_SOCK", os.getenv("XDG_RUNTIME_DIR") .. "/ssh-agent.socket")
 
 -- ---------------------------------------------------------------- config
 hl.config({
@@ -64,8 +65,7 @@ hl.animation({ leaf = "border", enabled = true, speed = 3, bezier = "fast" })
 hl.on("hyprland.start", function()
 	hl.exec_cmd("waybar")
 	hl.exec_cmd("playerctld daemon")
-	hl.exec_cmd("/usr/libexec/kf6/polkit-kde-authentication-agent-1")
-	hl.exec_cmd('eval "$(ssh-agent -s)"')
+	hl.exec_cmd("systemctl --user start hyprpolkitagent")
 end)
 
 -- ---------------------------------------------------------------- keybinds
